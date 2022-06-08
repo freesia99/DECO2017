@@ -1,0 +1,171 @@
+.wrapper {
+	width: 890px;
+	display: flex;
+	overflow-x: auto;
+	margin: 0, auto;
+}
+.outerdiv{
+	overflow-x: visible;
+}
+.wrapper .item1 {
+	min-width: 300px;
+	line-height: 100px;
+	text-align: center;
+	background-color: white;
+	border: 1px solid black;
+	border-top: 0px;
+	border-left: 0px;
+	font-size: 30px;
+
+}
+
+.wrapper .item2 {
+	min-width: 150px;
+	line-height: 200px;
+	text-align: center;
+	background-color: white;
+	border: 1px solid black;
+	border-top: 0px;
+	border-left: 0px;
+	font-size: 40px;
+
+}
+
+
+.event1 {
+	width: 890px;
+	height: 50%;
+	line-height: 50px;
+	color: blue;
+	text-align: center;
+	font-size: 120%;
+
+}
+
+.event2 {
+	width: 19%;
+	height: 50px;
+	line-height: 100%;
+	color: black;
+	text-align: center;
+	font-size: 100%;
+
+}
+
+.event3 {
+	position: absolute;
+	left: 450px;
+	top: 260px;
+}
+
+.event4 {
+	position: absolute;
+	left: 375px;
+	top: 435px;
+}
+
+
+
+
+@media screen and (max-width:390px) {
+
+	.wrapper {
+		width: 375px;
+		display: flex;
+		overflow-x: auto;
+
+	}
+
+	.wrapper .item1 {
+		min-width: 100px;
+		height: 70px;
+		line-height: 70px;
+		font-size: 20px;
+	}
+
+	.wrapper .item2 {
+		min-width: 80px;
+		line-height: 80px;
+		text-align: center;
+		background-color: white;
+		border-right: 1px solid black;
+		border-top: 1px solid black;
+		font-size: 25px;
+
+	}
+
+	.event1 {
+		width: 10x;
+		height: 50px;
+		line-height: 20px;
+		color: blue;
+		text-align: center;
+		font-size: 5px;
+		border-bottom: 1px solid black;
+	}
+
+	.event2 {
+		width: 10px;
+		height: 50px;
+		line-height: 20px;
+		color: black;
+		text-align: center;
+		font-size: 10px;
+
+	}
+
+	.event3 {
+		width: 1000px;
+		position: absolute;
+		left: 37px;
+		top: 220px;
+	}
+
+	.event4 {
+		position: absolute;
+		left: 32px;
+		top: 300px;
+	}
+
+	
+	.headLogo {
+		float: left;
+		position: absolute;
+		display: block;
+		width: 206px;
+		height: 69px;
+		margin-top: 13px;
+		margin-left: 97px;
+		margin-right: 86px;
+		padding: 0;
+		/* clear: both; */
+
+	}
+	.headpd{
+		width:390px;
+		border-bottom: 15px solid #2091DD;
+	}
+	.navLogo {
+		position: absolute;
+		float: left;
+		display: block;
+		margin-top:106px;
+		margin-left: 25px;
+	}
+	.haedPlayer {
+		float: left;
+		width: 230px;
+		height: 37px;
+		margin-left:  152px;
+		margin-top:108px;
+
+	}
+
+	.outerdiv{
+		overflow-x: visible;
+	}
+	.haedPlayer>a>img {
+		width: 230px;
+		height: 37px;
+	}
+}

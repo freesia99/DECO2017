@@ -13,6 +13,10 @@
 	<link rel="stylesheet" href="font.css">
 	<!-- <link rel="stylesheet" href="plugins.min.css">  -->
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="head.css">
+	<link rel="stylesheet" href="note.css">
+
+
 </head>
 
 <body>
@@ -178,15 +182,15 @@
 		passageTitle.innerHTML = listName;
 		// content
 		passageContent.innerHTML = pContent;
-var d  = new Date()
-var year = d.getFullYear()
-var month = d.getMonth()+1
-var day = d.getDate()
+		var d = new Date()
+		var year = d.getFullYear()
+		var month = d.getMonth() + 1
+		var day = d.getDate()
 
-if(month<10) month='0'+month
-if(day<10) day='0'+day
+		if (month < 10) month = '0' + month
+		if (day < 10) day = '0' + day
 
- 		lists.insertAdjacentHTML('beforeend', '<li><h2 class="listLinka">' + listName + '</h2><p>'+day+'/'+month+'/'+year+'</p><img class="bin" onclick="deleteLi(this)" src="images/if-bin@1x.png" alt=""></li>')
+		lists.insertAdjacentHTML('beforeend', '<li><h2 class="listLinka">' + listName + '</h2><p>' + day + '/' + month + '/' + year + '</p><img class="bin" onclick="deleteLi(this)" src="images/if-bin@1x.png" alt=""></li>')
 
 	}
 	// 删除list
@@ -200,11 +204,11 @@ if(day<10) day='0'+day
 	function deleteLi(objs) {
 		var li = objs.parentNode
 		lists.removeChild(li);
-		if(lists.getElementsByTagName('li').length==0){
-		// title
-		passageTitle.innerHTML = 'You can enter a title';
-		// content
-		passageContent.innerHTML = 'You can enter  content';
+		if (lists.getElementsByTagName('li').length == 0) {
+			// title
+			passageTitle.innerHTML = 'You can enter a title';
+			// content
+			passageContent.innerHTML = 'You can enter  content';
 		}
 
 		// passageTitle.innerHTML =lists.childElementCount.innerHTML;
@@ -213,5 +217,6 @@ if(day<10) day='0'+day
 	}
 
 </script>
+<script src="menu.js"></script>
 
 </html>

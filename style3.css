@@ -1,0 +1,192 @@
+
+
+        .wrapper{
+            width: 890px;
+            margin: auto;
+        }
+
+        .time {
+            width: 130px;
+            height: 130px;
+            background-color: white;
+            line-height: 200px;
+            font-size: 100px;
+            text-align: center;
+            color: black;
+            border: 0px black solid;
+            float: left;
+            margin: auto;
+        }
+
+        .box {
+            width: 490px;
+            height: 200px;
+            margin-left: 200px;
+            margin-top: 40px;
+            border: 3px solid #2091dd;
+            border-radius:3px;
+        }
+
+        .boxx {
+            width: 50px;
+            height: 200px;
+            float: left;
+            color: #2091dd;
+            font-size: 100px;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        .butt {
+            margin: auto;
+            height: 1px;
+            width: 890px;
+            margin-top: 61px;
+            margin-bottom: 75px;
+        }
+
+        .butt .button1 {
+            width: 129px;
+            height:129px;
+            background-image: url('stopwatchtimer1/reset.png');
+            background-size: cover;
+            border: 0px;
+            background-color: white;
+            margin-left: 30px;
+            
+        }
+
+        .butt .button2 {
+            width: 129px;
+            height:129px;
+            background-image: url('stopwatchtimer1/start.png');
+            background-size: cover;
+            border: 0px;
+            background-color: white;
+            margin-left: 30px;
+            margin-top: 20px;
+
+
+        }
+
+        .butt .button3 {
+            width: 129px;
+            height:129px;
+            background-image: url('stopwatchtimer1/stop.png');
+            background-size: cover;
+            border: 0px;
+            background-color: white;
+            margin-left: 220px;
+            margin-top: 20px;
+
+        }
+        .tip1{
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .tip2{
+            font-size: 15px;
+            margin-top: 210px;
+            color: red;
+
+        }
+
+@media screen and (max-width:390px){
+
+        .tip1{
+            font-size: 15px;
+            margin-top: 50px;
+        }
+        .tip2{
+            font-size: 12px;
+            margin-top: 120px;
+            /* overflow: hidden; */
+            text-overflow: ellipsis;
+            /* white-space: nowrap; */
+            width: 375px;
+        }
+
+
+
+
+
+        .wrapper{
+            width:390px;
+            margin: auto;
+        }
+
+        .time {
+            width: 55px;
+            height: 55px;
+            background-color: white;
+            line-height: 84px;
+            font-size: 42px;
+            text-align: center;
+            color: black;
+            border: 0px black solid;
+            float: left;
+            margin: auto;
+        }
+
+        .box {
+            width: 210px;
+            height: 84px;
+            margin-left: 68px;
+            margin-top: 40px;
+            border: 3px solid #2091dd;
+            border-radius:3px;
+        }
+
+        .boxx {
+            width: 21px;
+            height: 81px;
+            float: left;
+            color: #2091dd;
+            font-size: 42px;
+            text-align: center;
+            line-height: 84px;
+        }
+
+        .butt {
+            margin: auto;
+            height: 1px;
+            width: 35px;
+            margin-left: 259px;
+           
+        }
+
+        .butt .button1 {
+            width: 54px;
+            height:54px;
+            background-image: url('stopwatchtimer1/reset.png');
+            background-size: cover;
+            border: 0px;
+            background-color: white;
+            margin-left: 20px;
+        }
+
+        .butt .button2 {
+            width: 54px;
+            height:54px;
+            background-image: url('stopwatchtimer1/start.png');
+            background-size: cover;
+            border: 0px;
+            background-color: white;
+            margin-left: 20px;
+
+
+        }
+
+        .butt .button3 {
+            width:54px;
+            height:54px;
+            background-image: url('stopwatchtimer1/stop.png');
+            background-size: cover;
+            border: 0px;
+            background-color: white;
+            margin-left: -190px;
+            margin-top: 30px;
+
+        }
+}
+

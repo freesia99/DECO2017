@@ -1,0 +1,41 @@
+@media screen and (max-width:390px) {
+	.headLogo {
+		float: left;
+		position: absolute;
+		display: block;
+		width: 206px;
+		height: 69px;
+		margin-top: 13px;
+		margin-left: 97px;
+		margin-right: 86px;
+		padding: 0;
+		/* clear: both; */
+
+	}
+	.navLogo {
+		position: absolute;
+		float: left;
+		display: block;
+		margin-top:106px;
+		margin-left: 25px;
+	}
+	.haedPlayer {
+		float: left;
+		width: 230px;
+		height: 37px;
+		margin-left:152px;
+		margin-top:108px;
+
+	}
+
+
+	.haedPlayer>a>img {
+		width: 230px;
+		height: 37px;
+	}
+
+	.headpd{
+		width:390px;
+		border-bottom: 15px solid #2091DD;
+	}
+}
