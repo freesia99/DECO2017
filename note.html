@@ -80,8 +80,138 @@
 			</div>
 
 		</div>
+		<!-- body -->
+		<div class="list-content">
+			<ul class="lists">
+				<li>
+					<h2 class="listLinka">Assessment 2 FAQs</h2>
+					<p>18/04/2022</p>
+					<img class="bin" onclick="deleteLi(this)" src="images/if-bin@1x.png" alt="">
+				</li>
+				<li>
+					<h2 class="listLinkb">CHNS3000 proposal</h2>
+					<p>05/04/2022</p>
+					<img class="bin" onclick="deleteLi(this)" src="images/if-bin@1x.png" alt="">
+				</li>
 
+			</ul>
+		</div>
+		<div class="passage">
+			<img onclick="addList()" src="images/st-pen-write@1x.png">
+			<h2 class="passageTitle">Assessment 2 FAQs</h2>
+			<p class="passagecontents">
+				Frequently Asked Questions for Assessment 2: Web App Pitch<br>
+				Presentation Content<br>
+				Research<br>
+				Do we need primary and secondary research or is secondary fine?<br>
+				<br>
+				We always encourage you to do interviews and surveys,
+				in order to get a better understanding of your users and their needs.
+				However, it is not a requirement for this assessment and we are not
+				evaluating your ability to do primary research.
+				We are evaluating the profiles themselves and how much depth
+				and useful information they have, which would likely come about
+				from combining insights from multiple research methods.<br><br>
+				How many personas should we be doing?<br><br>
+				1 is the minimum required amount, although it is very likely there are groups of users, who all have
+				different characteristics and needs. By segmenting these groups with different personas, you can better
+				accommodate their needs and design better solutions for them.DesignAre the secondary features an
+				extension of the primary features, or in addition?The secondary features are in addition to the primary
+				features, you must choose 1 secondary feature from each category, which should functionWill we be
+				designing for both Desktop and mobile?Of course, seeing as mobile devices make up almost 50% of web
+				traffic (Links to an external site.), we must account for them. DesignAre the secondary features an
+				extension of the primary features, or in addition?
+			</p>
+
+		</div>
+	</div>
+	<!-- foot -->
+
+	<div class="social-link">
+		<ul>
+			<li>
+				<a href="#">
+
+					<img src="images/f.png" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+
+					<img src="images/t.png" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+
+					<img src="images/i.png" alt="">
+				</a>
+			</li>
+		</ul>
 	</div>
 </body>
+<script>
+
+	// 切换文章标题
+	var bin = document.getElementsByClassName('bin')
+	const lists = document.querySelector('.lists')
+	const listLinka = document.querySelector('.listLinka')
+	const listLinkb = document.querySelector('.listLinkb')
+	const passageTitle = document.querySelector('.passageTitle')
+	const passageContent = document.querySelector('.passagecontents')
+	listLinka.addEventListener('click', () => {
+		passageTitle.innerHTML = listLinka.innerHTML
+	})
+
+	listLinkb.addEventListener('click', () => {
+		passageTitle.innerHTML = listLinkb.innerHTML
+
+	})
+	console.log(lists.getElementsByTagName('li'))
+	// 添加文章
+	function addList() {
+		// 用户输入
+		const listName = prompt("Please enter a title: ");
+		const pContent = prompt("Please enter the content: ");
+
+		// title
+		passageTitle.innerHTML = listName;
+		// content
+		passageContent.innerHTML = pContent;
+var d  = new Date()
+var year = d.getFullYear()
+var month = d.getMonth()+1
+var day = d.getDate()
+
+if(month<10) month='0'+month
+if(day<10) day='0'+day
+
+ 		lists.insertAdjacentHTML('beforeend', '<li><h2 class="listLinka">' + listName + '</h2><p>'+day+'/'+month+'/'+year+'</p><img class="bin" onclick="deleteLi(this)" src="images/if-bin@1x.png" alt=""></li>')
+
+	}
+	// 删除list
+	// for (var i = 0; i < bin.length; i++) {
+	// 	bin[i].addEventListener('click', () => {
+	// 		deleteLi(bin[i].parentNode)
+	// 		console.log(lis)
+	// 	})
+	// }
+
+	function deleteLi(objs) {
+		var li = objs.parentNode
+		lists.removeChild(li);
+		if(lists.getElementsByTagName('li').length==0){
+		// title
+		passageTitle.innerHTML = 'You can enter a title';
+		// content
+		passageContent.innerHTML = 'You can enter  content';
+		}
+
+		// passageTitle.innerHTML =lists.childElementCount.innerHTML;
+		// content
+		// passageContent.innerHTML = 'You can enter  content';
+	}
+
+</script>
 
 </html>
