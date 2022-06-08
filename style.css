@@ -1,0 +1,151 @@
+html {
+	scroll-behavior: smooth
+}
+
+html,body {
+	height: 100%
+}
+.wrapper{
+	width: 890px;
+	/* background-color: #CB8B8C; */
+	margin: 0 auto;
+}
+body {
+	font-family: "Rubik", sans-serif;
+	color: #525252;
+	/* width: 890px;
+	background-color: #CB8B8C;
+	margin: 0 auto; */
+}
+
+a {
+	color: #0e0d0d;
+	text-decoration: none
+}
+
+a:hover {
+	color: #abd373;
+	text-decoration: underline;
+	
+}
+
+/* hearder*/
+.headpd{
+	height: 146px
+}
+
+
+.headLogo{
+	float: left;
+	display: flex;
+	width: 206px;
+	height:69px;
+	margin-top: 25px;
+	margin-left:38px;
+}
+
+.haedPlayer{
+	float: left;
+	width: 305px;
+	height:48px;
+	margin-left: 157px;
+	margin-top: 35px;
+
+}
+
+.headUser{
+	float: right;
+	display: inline-flex;
+	width: 24px;
+	height:24px;
+	margin-right: 70px;
+	margin-top: 45px;
+
+}
+
+.headSearch{
+	float: right;
+	display: inline-flex;
+	width: 24px;
+	height:24px;
+	margin-right: 25px;
+	margin-top: 45px;
+}
+
+/*nav*/
+
+.header-bottom {
+	float: left;
+	display: flex;
+	width: 890px;
+	/* margin-top: 28px;
+	margin-left: 141px; */
+	border-top: 1px solid #dee2e6
+}
+
+
+.main-nav>ul>li {
+	display: inline-block;
+	font-size: 14px;
+	font-style: blod;
+	margin-left: 86px;
+}
+.mediaMenu{
+	display: none;
+}
+.navLogo{
+	display: none;
+}
+/*media*/
+
+
+@media (max-width:390px) {
+	.headLogo{
+		float: left;
+		display: block;
+		width: 206px;
+		height:69px;
+		margin-top: 13px;
+		margin-left:40px;
+		margin-right: 86px;
+		padding: 0;
+		/* clear: both; */
+
+	}
+	.navLogo{
+		clear: both;
+		float: left;
+		display: block;
+		margin-top: 35px;
+		margin-left:25px;
+	}
+	.haedPlayer{
+		float: left;
+		width: 230px;
+		height: 37px;
+		margin-left: 37px;
+		margin-top: 37px;
+	
+	}
+	.haedPlayer>img{
+		width: 230px;
+		height: 37px;
+	}
+	.mediaMenu{
+		float: left;
+		display: flex;
+		width: 39px;
+		height:39px;
+		margin-top: 32px;
+		margin-left:19px;
+
+	}
+	.header-bottom{
+		background-color: #2091DD;
+		width: 100%;
+		height: 15px;
+	}
+	.header-bottom>.container{
+		display: none;
+	}
+}
