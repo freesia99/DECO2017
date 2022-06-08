@@ -29,13 +29,21 @@
 	}
 
 
-	.haedPlayer>a>img {
-		width: 230px;
-		height: 37px;
+	.haedPlayer>img {
+		width: 14px;
+		height: 14px;
+	}
+	.pause{
+		margin-left:19px;
+		margin-top:11px;
 	}
 
 	.headpd{
 		width:390px;
 		border-bottom: 15px solid #2091DD;
+	}
+	.goend{
+		margin-left:140px;
+		margin-top:11px;
 	}
 }

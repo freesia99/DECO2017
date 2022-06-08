@@ -14,7 +14,20 @@
 	<!-- <link rel="stylesheet" href="plugins.min.css">  -->
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="style1.css">
+	<script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+	<script language="javascript" type="text/javascript" src="libraries/p5.dom.js"></script>
+	<script language="javascript" type="text/javascript" src="libraries/p5.sound.js"></script>
 </head>
+<style type="text/css">
+	table td {
+		width: 10px;
+		height: 50px;
+		line-height: 20px;
+		color: black;
+		text-align: center;
+		font-size: 15px;
+	}
+</style>
 
 <body>
 	<div class="wrapper outerdiv">
@@ -37,9 +50,11 @@
 				</a>
 			</div>
 			<div class="haedPlayer">
-				<a href=" ">
-					<img src="images/Player@1x.png">
-				</a>
+				<img class="pause" src="images/riLine-pause-circle-line@1x.png">
+
+				<img class="goend" src="images/iconPark-go-end@1x.png">
+
+
 			</div>
 			<div class="headUser">
 				<a href=" ">
@@ -84,7 +99,7 @@
 
 	</div>
 
-	<div class="wrapper"> 
+	<div class="wrapper">
 		<div class="event3"><img src="tasklist\箭头.png" alt=""></div>
 		<div class="item1">January</div>
 		<div class="item1">February</div>
@@ -99,7 +114,7 @@
 		<div class="item1">November</div>
 		<div class="item1">December</div>
 	</div>
-	<div class="wrapper"> 
+	<div class="wrapper">
 		<div class="event4"><img src="tasklist\箭头.png" alt=""></div>
 		<div class="item2">1</div>
 		<div class="item2">2</div>
@@ -133,73 +148,74 @@
 		<div class="item2">30</div>
 		<div class="item2">31</div>
 	</div>
-	<table class="wrapper">
-        <tr>
-            <td class="event1">Priority rating</td>
-            <td class="event1">Event</td>
-            <td class="event1">Due date</td>
-            <td class="event1">Estimated time to complete</td>
-            <td class="event1">Completion status</td>
-            <td class="event1"><img src="tasklist\1.png" alt=""></td>
-        </tr>
-        <tr>
-            <td class="event2">High</td>
-            <td class="event2">DECO2200 A2</td>
-            <td class="event2">4.22</td>
-            <td class="event2">36hours</td>
-            <td class="event2">Not Done</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="event2">Med</td>
-            <td class="event2">CHNS3000 quiz</td>
-            <td class="event2">4.29</td>
-            <td class="event2">1hours</td>
-            <td class="event2">Not Done</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="event2">Low</td>
-            <td class="event2">DECO2400 Lec</td>
-            <td class="event2">4.20</td>
-            <td class="event2">30min</td>
-            <td class="event2">Not Done</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td class="event2">High</td>
-            <td class="event2">CHIN3000 A2</td>
-            <td class="event2">4.18</td>
-            <td class="event2">2hours</td>
-            <td class="event2">Done</td>
-            <td></td>
-        </tr>
-    </table>
-   <!-- foot -->
-   <div class="social-link">
-	<ul>
-		<li>
-			<a href="#">
-			   
-				 <img src="images/f.png" alt="">
-			</a>
-		</li>
-		<li>
-			<a href="#">
-			   
-				<img src="images/t.png" alt="">
-			</a>
-		</li>
-		 <li>
-			<a href="#">
-			   
-				<img src="images/i.png" alt="">
-			</a>
-		</li>
-	</ul>
+	<table class="wrapper" id="work_table">
+		<tr>
+			<td class="event1">Priority rating</td>
+			<td class="event1">Event</td>
+			<td class="event1">Due date</td>
+			<td class="event1">Estimated time to complete</td>
+			<td class="event1">Completion status</td>
+			<td class="event1"><img src="tasklist\1.png" alt="" onclick="addList()"></td>
+		</tr>
+		<tr>
+			<td class="event2">High</td>
+			<td class="event2">DECO2200 A2</td>
+			<td class="event2">4.22</td>
+			<td class="event2">36hours</td>
+			<td class="event2">Not Done</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="event2">Med</td>
+			<td class="event2">CHNS3000 quiz</td>
+			<td class="event2">4.29</td>
+			<td class="event2">1hours</td>
+			<td class="event2">Not Done</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="event2">Low</td>
+			<td class="event2">DECO2400 Lec</td>
+			<td class="event2">4.20</td>
+			<td class="event2">30min</td>
+			<td class="event2">Not Done</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="event2">High</td>
+			<td class="event2">CHIN3000 A2</td>
+			<td class="event2">4.18</td>
+			<td class="event2">2hours</td>
+			<td class="event2">Done</td>
+			<td></td>
+		</tr>
+	</table>
+	<!-- foot -->
+	<div class="social-link">
+		<ul>
+			<li>
+				<a href="#">
+
+					<img src="images/f.png" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+
+					<img src="images/t.png" alt="">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+
+					<img src="images/i.png" alt="">
+				</a>
+			</li>
+		</ul>
 	</div>
-	
+
 </body>
 <script src="menu.js"></script>
+<script language="javascript" type="text/javascript" src="sketch.js"></script>
 
 </html>

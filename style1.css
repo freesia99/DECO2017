@@ -55,13 +55,13 @@
 .event3 {
 	position: absolute;
 	left: 450px;
-	top: 260px;
+	top: 250px;
 }
 
 .event4 {
 	position: absolute;
 	left: 375px;
-	top: 435px;
+	top: 420px;
 }
 
 
@@ -104,27 +104,17 @@
 		border-bottom: 1px solid black;
 	}
 
-	.event2 {
-		width: 10px;
-		height: 50px;
-		line-height: 20px;
-		color: black;
-		text-align: center;
-		font-size: 10px;
-
-	}
-
 	.event3 {
 		width: 1000px;
 		position: absolute;
 		left: 37px;
-		top: 220px;
+		top: 235px;
 	}
 
 	.event4 {
 		position: absolute;
 		left: 32px;
-		top: 300px;
+		top: 315px;
 	}
 
 	
@@ -164,8 +154,17 @@
 	.outerdiv{
 		overflow-x: visible;
 	}
-	.haedPlayer>a>img {
-		width: 230px;
-		height: 37px;
+	.haedPlayer>img {
+		width: 14px;
+		height: 14px;
+	}
+	.pause{
+		margin-left:19px;
+		margin-top:11px;
+	}
+
+.goend{
+		margin-left:140px;
+		margin-top:11px;
 	}
 }

@@ -15,7 +15,9 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="head.css">
 	<link rel="stylesheet" href="note.css">
-
+	<script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+	<script language="javascript" type="text/javascript" src="libraries/p5.dom.js"></script>
+	<script language="javascript" type="text/javascript" src="libraries/p5.sound.js"></script>
 
 </head>
 
@@ -40,10 +42,12 @@
 				</a>
 			</div>
 			<div class="haedPlayer">
-				<a href=" ">
-					<img src="images/Player@1x.png">
-				</a>
-			</div>
+				<img class="pause" src="images/riLine-pause-circle-line@1x.png">
+				
+				<img class= "goend" src="images/iconPark-go-end@1x.png">
+			
+			
+		</div>
 			<div class="headUser">
 				<a href=" ">
 
@@ -101,7 +105,7 @@
 			</ul>
 		</div>
 		<div class="passage">
-			<img onclick="addList()" src="images/st-pen-write@1x.png">
+			<img onclick="addP()" src="images/st-pen-write@1x.png">
 			<h2 class="passageTitle">Assessment 2 FAQs</h2>
 			<p class="passagecontents">
 				Frequently Asked Questions for Assessment 2: Web App Pitch<br>
@@ -173,7 +177,7 @@
 	})
 	console.log(lists.getElementsByTagName('li'))
 	// 添加文章
-	function addList() {
+	function addP() {
 		// 用户输入
 		const listName = prompt("Please enter a title: ");
 		const pContent = prompt("Please enter the content: ");
@@ -217,6 +221,7 @@
 	}
 
 </script>
-<script src="menu.js"></script>
+<script src="menuc.js"></script>
+<script language="javascript" type="text/javascript" src="sketch.js"></script>
 
 </html>
